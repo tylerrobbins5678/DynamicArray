@@ -1,8 +1,8 @@
 # DynamicArray
-Dynamic array implementation in GoLang with an extream focus on performance.
-provides O((log(n) / k) time complexity for append, prepend
-provides O(n + k*2) worst case space complexity, O(n) best case space complexity
-filter and count functions provide O(k) time complexity and 0(1) space complexity
+Dynamic array implementation in GoLang with an extream focus on performance. <br>
+provides O((log(n) / k) time complexity for append, prepend <br>
+provides O(n + k*2) worst case space complexity, O(n) best case space complexity <br>
+filter and count functions provide O(k) time complexity and 0(1) space complexity <br>
 
 # Under the hood
 This dynamic array allocates an golang slice of pointers to fixed size (k) arrays.
