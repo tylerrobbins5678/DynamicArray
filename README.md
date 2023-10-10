@@ -10,24 +10,24 @@ Doing so, the underlying element is never changed or moved within memory. The sl
 filter and count functions are carried out my multiple go routines and consume a function that returns the altered value or a boolean to count.
 
 # usage
-list := mappedlist.Make\[int\]()
+list := mappedlist.Make\[int\]() <br>
 list -> []
 
-list.Append(12345)
+list.Append(12345) <br>
 list -> [12345]
 
-list.Prepend(1)
+list.Prepend(1) <br>
 list -> [1,12345]
 
-arr := list.ToArray()
+arr := list.ToArray() <br>
 arr -> [1,12345]
 
-list = mappedlist.MakeFromArray\[int\](arr)
+list = mappedlist.MakeFromArray\[int\](arr) <br>
 list -> [1,12345]
 
 list.get(0) -> 1
 
-list.set(0, 1000)
+list.set(0, 1000) <br>
 list -> [1000,12345]
 
 
